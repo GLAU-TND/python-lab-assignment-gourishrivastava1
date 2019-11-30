@@ -1,11 +1,13 @@
 try:
     a='34'+54
-    g=int('vsAH')
-    obj='Hi'
-    obj.remove()
 except TypeError as e:
     print("TypeError:",e)
+try:
+    g=int('vsAH')
 except ValueError as e:
     print("ValueError:",e)
+try:
+    obj='Hi'
+    obj.remove()
 except AttributeError as e:
     print("AttributeError:",e)
